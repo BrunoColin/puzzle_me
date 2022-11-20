@@ -1,0 +1,8 @@
+.pieces{
+  display: inline-flex;
+}
+
+.text{
+  color: aliceblue;
+  font-size: 10px;
+}

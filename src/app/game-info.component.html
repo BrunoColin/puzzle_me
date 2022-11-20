@@ -1,0 +1,20 @@
+<div class="text">Descubra a sequência de cores correta em 5 tentativas. Depois de cada tentativa, as peças mostram o quão perto você está da solução.</div>
+<div class="pieces">
+    <div *ngFor="let piece of pieces let i = index">
+      <app-piece [id]="i" [color]="piece.color" [piecesOptions]="piecesOptions" [pieceOption]="piece.pieceOption"></app-piece>
+    </div>
+</div>
+<div class="text">A cor azul está presente nas cores da senha e está na posição correta.</div>
+<div class="pieces">
+    <div *ngFor="let piece of pieces2 let i = index">
+      <app-piece [id]="i" [color]="piece.color" [piecesOptions]="piecesOptions" [pieceOption]="piece.pieceOption"></app-piece>
+    </div>
+</div>
+<div class="text">A cor rosa está presente nas cores da senha, mas está na posição errada.</div>
+<div class="pieces">
+    <div *ngFor="let piece of pieces3 let i = index">
+      <app-piece [id]="i" [color]="piece.color" [piecesOptions]="piecesOptions" [pieceOption]="piece.pieceOption"></app-piece>
+    </div>
+</div>
+<div class="text">A cor branca não está presente nas cores da senha.</div>
+<div class="text">Uma sequência nova aparece a cada dia.</div>

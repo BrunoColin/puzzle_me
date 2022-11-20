@@ -1,0 +1,15 @@
+.dot {
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid;
+    background-color: grey;
+    margin-top: 2px;
+    margin-left: 2px;
+  }
+
+  .options{
+    position: absolute;
+    z-index: 2;
+  }

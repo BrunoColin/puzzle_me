@@ -1,0 +1,8 @@
+<span [style.border-color]="color" class="dot" (click)="onCLick()">
+    <app-piece-options [color]="pieceOption.color" class="selected" *ngIf="pieceOption"></app-piece-options>
+</span>
+<div class="options" *ngIf="show">
+    <div *ngFor="let pieceOption of piecesOptions">
+        <app-piece-options [color]="pieceOption.color" (changeOption)="onSelectOption($event)"></app-piece-options>
+    </div>
+</div>
